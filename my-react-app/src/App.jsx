@@ -1,15 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DefaultLayout from './layouts/DefaultLayout';
+import ChiSiamo from './pages/ChiSiamo';
+import HomePage from './pages/HomePage';
+import Prodotti from './pages/Prodotti';
 
 function App() {
   
 
   return (
-    <>
-      
-    </>
+   <BrowserRouter>
+   <Routes element={<DefaultLayout />}>
+    <Route path="/" element={<ChiSiamo />} />
+    <Route path="/Homepage" element={<HomePage />} />
+    <Route path="/Prodotti" element={<Prodotti />} />
+   </Routes>
+   </BrowserRouter>
   )
 }
 

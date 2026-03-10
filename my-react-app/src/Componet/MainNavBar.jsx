@@ -1,4 +1,4 @@
-import { NavLink} from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 
 export default function MainNavBar(){
 
@@ -7,8 +7,8 @@ export default function MainNavBar(){
         <nav>
             <ul>
                 <li>
-                    <NavLink to="/">Chi Siamo </NavLink>
                     <NavLink to="/HomePage">Home Page</NavLink>
+                    <NavLink to="/">Chi Siamo </NavLink>
                     <NavLink to="/Prodotti">Prodotti</NavLink>
                 </li>
             </ul>

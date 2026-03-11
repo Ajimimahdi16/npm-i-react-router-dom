@@ -18,7 +18,7 @@ export default function Prodotti() {
 
   return (
     <>
-      <button onClick={fetchProdotti}>Aggiorna Prodotti</button>
+      
       <main>
         <h1 className='titolo'>Lista dei prodotti</h1>
         <section className='prodotti'>

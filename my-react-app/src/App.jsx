@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainNavBar from './Componet/MainNavBar';
+
 import DefaultLayout from './layouts/DefaultLayout';
 import ChiSiamo from './pages/ChiSiamo';
 import HomePage from './pages/HomePage';
@@ -12,6 +14,7 @@ function App() {
 
   return (
    <BrowserRouter>
+   <MainNavBar />
    <Routes element={<DefaultLayout />}>
     <Route path="/" element={<HomePage />} />
     <Route path="/ChiSiamo" element={<ChiSiamo />} />

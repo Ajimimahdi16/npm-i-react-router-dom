@@ -8,11 +8,11 @@ export default function MainNavBar() {
         <button>Home</button>
       </NavLink>
       
-      <NavLink to="/prodotti">
+      <NavLink to="/chi-siamo">
         <button>Chi Siamo</button>
       </NavLink>
       
-      <NavLink to="/chi-siamo">
+      <NavLink to="/prodotti">
         <button>Prodotti</button>
       </NavLink>
     </nav>

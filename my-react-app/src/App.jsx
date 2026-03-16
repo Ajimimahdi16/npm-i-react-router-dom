@@ -9,6 +9,7 @@ import ChiSiamo from './pages/ChiSiamo';
 import HomePage from './pages/HomePage';
 import Prodotti from './pages/Prodotti';
 
+
 function App() {
   
 
@@ -19,6 +20,7 @@ function App() {
     <Route path="/" element={<HomePage />} />
     <Route path="/ChiSiamo" element={<ChiSiamo />} />
     <Route path="/Prodotti" element={<Prodotti />} />
+    <Route path="*" element={<h1>404 - Pagina non trovata</h1>} />
    </Routes>
    </BrowserRouter>
   )

@@ -30,6 +30,7 @@ export default function Prodotti() {
                 <p>{product.description}</p>
                 <p>Categoria: {product.category}</p>
                 <img src={product.image} alt={product.title} />
+                
               </div>
             </article>
           ))}
